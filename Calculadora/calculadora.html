@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font: normal 10pt Arial;
+            text-align: center;
+        }
+
+        div {
+            margin-top: 10px;
+        }
+
+        div#width input {
+            width: 90pt;
+        }
+
+        div.margin {
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Caculadora</h1>
+    <div id="width">
+        <input type="number" name="valor1" id="v1">
+        <input type="number" name="valor2" id="v2">
+    </div>
+    <div class="margin">
+        <input type="button" value="Somar" id="so">
+        <input type="button" value="Subtrair" id="su">
+        <input type="button" value="Multiplicar" id="mu">
+        <input type="button" value="Dividir" id="di">
+    </div>
+    <div id="res">Resultado</div>
+
+    <script>
+        var so = window.document.getElementById('so')
+        so.addEventListener('click', somar)
+        var su = window.document.getElementById('su')
+        su.addEventListener('click', subtrair)
+        var mu = window.document.getElementById('mu')
+        mu.addEventListener('click', multiplicar)
+        var di = window.document.getElementById('di')
+        di.addEventListener('click', dividir)
+
+        
+
+        function somar() {
+            var val1 = window.document.getElementById('v1')
+            var val2 = window.document.getElementById('v2')
+            var n1 = Number(val1.value)
+            var n2 = Number(val2.value)
+            var res = window.document.getElementById('res')
+            var s = n1 + n2
+            res.innerHTML = s
+        }
+
+        function subtrair() {
+            var val1 = window.document.getElementById('v1')
+            var val2 = window.document.getElementById('v2')
+            var n1 = Number(val1.value)
+            var n2 = Number(val2.value)
+            var res = window.document.getElementById('res')
+            var s = n1 - n2
+            res.innerHTML = s
+        }
+
+        function multiplicar() {
+            var val1 = window.document.getElementById('v1')
+            var val2 = window.document.getElementById('v2')
+            var n1 = Number(val1.value)
+            var n2 = Number(val2.value)
+            var res = window.document.getElementById('res')
+            var s = n1 * n2
+            res.innerHTML = s
+        }
+
+        function dividir() {
+            var val1 = window.document.getElementById('v1')
+            var val2 = window.document.getElementById('v2')
+            var n1 = Number(val1.value)
+            var n2 = Number(val2.value)
+            var res = window.document.getElementById('res')
+            var s = n1 / n2
+            res.innerHTML = s
+        }
+    </script>
+
+</body>
+</html>
