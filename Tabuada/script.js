@@ -1,6 +1,13 @@
+var numero = document.getElementById('num')
+var tab = document.getElementById('seltab')
+
+function foco(){
+    num.value = ''
+    num.focus()
+    return true
+}
+
 function somar(){
-    var numero = document.getElementById('num')
-    var tab = document.getElementById('seltab')
     if (numero.value.length == 0){
         alert('Você não colocou um número')
     } else {
@@ -12,11 +19,10 @@ function somar(){
             tab.appendChild(item)
         }
     }
+    foco()
 }
 
 function subtrair(){
-    var numero = document.getElementById('num')
-    var tab = document.getElementById('seltab')
     if (numero.value.length == 0){
         alert('Você não colocou um número')
     } else {
@@ -28,11 +34,10 @@ function subtrair(){
             tab.appendChild(item)
         }
     }
+    foco()
 }
 
 function multiplicar(){
-    var numero = document.getElementById('num')
-    var tab = document.getElementById('seltab')
     if (numero.value.length == 0){
         alert('Você não colocou um número')
     } else {
@@ -44,10 +49,9 @@ function multiplicar(){
             tab.appendChild(item)
         }
     }
+    foco()
 }
 function dividir(){
-    let numero = document.getElementById('num')
-    var tab = document.getElementById('seltab')
     if (numero.value.length == 0){
         alert('Você não colocou um número')
     } else {
@@ -59,4 +63,5 @@ function dividir(){
             tab.appendChild(item)
         }
     }
+    foco()
 }
