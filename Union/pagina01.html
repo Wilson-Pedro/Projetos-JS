@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <nav>
+        <a href="pagina02.html">Tabuada</a>
+        <a href="pagina03.html">Inverter</a>
+    </nav>
+    <main>
+        <section>
+            <div>
+                <p>
+                    Digite o 1° Número:
+                    <input type="Number" id="num1">
+                </p>
+                <p>
+                    Digite o 2° Número:
+                    <input type="Number" id="num2">
+                </p>
+                <p>
+                    <button onclick="somar()">Somar</button>
+                    <button onclick="subtrair()">Subtrair</button>
+                    <button onclick="multiplicar()">Multiplicar</button>
+                    <button onclick="dividir()">Dividir</button>
+                </p>
+            </div>
+            <div id="res">
+                Resultado
+            </div>
+            <script src="script1.js"></script>
+        </section>
+    </main>
+</body>
+</html>
