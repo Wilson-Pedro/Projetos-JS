@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inverter</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        div#mensagem{
+            margin: 30px;
+            font-size: 19pt;
+            font-weight: solid;
+        }
+    </style>
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Inverter Números</h1>
+        <h1>Hora do dia</h1>
     </header>
     <nav>
         <a href="pagina01.html">Calculadora</a>
         <a href="pagina02.html">Tabuada</a>
-        <a href="pagina04.html">Hora do dia</a>
+        <a href="pagina03.html">Inverter</a>
     </nav>
     <main>
-        <div>
-            <p id="paragrafo">
-                Digite alguns Números:
-                <input type="Number" id="num">
-                <button onclick="inverter()">Inverter</button>
-            </p>
+        <div id="mensagem">
+            
         </div>
-        <div id="res">
-            Resultado
+        <div>
+            <img id="imagem" src="imagens/manha.png" alt="foto do dia">
         </div>
     </main>
-    <script src="script3.js"></script>
+    <script src="script4.js"></script>
 </body>
 </html>
