@@ -7,6 +7,11 @@
 
 body {
     font: normal 12pt Arial;
+    text-align: center;
+}
+
+main {
+    max-height: 100vh;
 }
 
 header {
@@ -40,14 +45,11 @@ nav a:hover {
     border-radius: 3px;
 }
 
-main{
-    text-align: center;
-    margin: auto;
-    height: 82vh;
-}
 
 section{
     padding: 20px;
+    width: 500px;
+    margin: auto;
 }
 
 p {

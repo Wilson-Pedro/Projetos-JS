@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <nav>
+        <a href="../pag01/pagina01.html">Calculadora</a>
+        <a href="../pag02/pagina02.html">Tabuada</a>
+        <a href="../pag03/pagina03.html">Inverter</a>
+        <a href="../pag04/pagina04.html">Hora do dia</a>
+    </nav>
+    <main>
+        <p>
+            Ano de Nascimento: 
+            <input id="txtano" type="Number">
+        </p>
+        <p>
+            Sexo:
+            <input type="radio" name="rsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="rsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <button onclick="verificar()">Verificar</button>
+        </p>
+        <div id="res">
+            Preencha os dados para ver os dados
+        </div>
+    </main> 
+    <script src="script5.js"></script>
+</body>
+</html>
